@@ -5,7 +5,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent }
+  { path: '', component: HomeComponent ,
+  children: [
+    { path: '', redirectTo: 'employers', pathMatch: 'full' },
+    { path: 'employers', loadChildren: () => import('./employer/employer.module').then(m => m.EmployerModule) },
+  
+  ]}
+
 ];
 
 @NgModule({

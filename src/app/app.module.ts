@@ -16,7 +16,8 @@ import { SidebarComponent } from './home/sidebar/sidebar.component';
     HeaderComponent,
     FooterComponent,
     ContentWrapperComponent,
-    SidebarComponent
+    SidebarComponent,
+    
   ],
   imports: [
     BrowserModule,
